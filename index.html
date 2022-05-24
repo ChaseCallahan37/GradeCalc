@@ -7,21 +7,45 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="/styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
       <div class="jumbotron">
         <h1>Grade Calculator</h1>
       </div>
-      <div>
-    <form id="add-category-form">
-        <input id="category-name" placeholder="Enter Category Name">
-        <input id="category-weight" placeholder="Enter Category Weight">
-        <button id="add-category">Add</button>
-    </form>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+              <h5>Professional Development</h5>
+              <label>AIMS</label>
+              <label>Other</label>
+            </div>
+            <div class="col-md-2">
+              <h5>Lab/Quiz/Part</h5>
+              <label>Lab</label>
+              <label>Quiz</label>
+              <label>Participation</label>
+            </div>
+            <div class="col-md-2">
+              <h5>Exams</h5>
+              <label>Exam 1</label>
+              <label>Exam 2</label>
+              <label>Exam 3</label>
+            </div>
+            <div class="col-md-2">
+              <h5>PA/RA</h5>
+              <label>PA 1</label>
+              <label>RA 1</label>
+            </div>
+            <div class="col-md-2">
+              <h5>Group Project</h5>
+              <label>Participation</label>
+              <label>Professionalism</label>
+              <label>Analytical</label>
+              <label>PowerApp</label>
+            </div>
+        </div>
       </div>
-      <div id="categories"></div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./scripts/app.js"></script>
