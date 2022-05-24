@@ -3,8 +3,66 @@
     color: white;
 }
 
-.h5 {
-    text-align: left;
+#prof {
+    text-align: center;
+    text-decoration: underline;
 }
 
-.
+#profList {
+    position: relative;
+    top: 10px;
+    left: -30px;
+}
+
+#labs {
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    left: 15px;
+}
+
+#labsList {
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+
+#exams {
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    left: -65px;
+}
+
+#examsList {
+    position: relative;
+    top: 10px;
+    left: -10px;
+}
+
+#pa {
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    left: -150px;
+}
+
+#paList {
+    position: relative;
+    top: 10px;
+    left: -90px;
+}
+
+#groupProj {
+    text-align: left;
+    text-decoration: underline;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+#groupList {
+    position: relative;
+    top: 20px;
+    left: -30px;
+}
