@@ -2,6 +2,7 @@
     background-color: crimson;
     color: white;
     border-radius: 0px;
+    text-align: center;
 }
 
 #prof {
@@ -83,4 +84,9 @@ body{
 .clear{
 
     clear:both;
+}
+
+.relativePosition{
+
+    position:relative;
 }
