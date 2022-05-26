@@ -1,6 +1,7 @@
 .jumbotron {
     background-color: crimson;
     color: white;
+    border-radius: 0px;
 }
 
 #prof {
