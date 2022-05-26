@@ -72,3 +72,15 @@ body{
     font-family: Bookman, URW Bookman L, serif;
 }
 
+.toRight{
+
+    float:right;
+}
+
+.toLeft{
+    float:left;
+}
+.clear{
+
+    clear:both;
+}
