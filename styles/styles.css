@@ -101,3 +101,12 @@ body {
 input{
     width: 60px;
 }
+
+#professionalDevelopment input{
+   position:relative;
+
+}
+
+.outOf{
+    font-size: 20px;
+}
