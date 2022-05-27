@@ -4,17 +4,17 @@
     border-radius: 0px;
     text-align: center;
 }
-
+.subtext{
+    text-align: center;
+    font-size: small;
+    line-height: .5;
+    
+}
 #prof {
     text-align: center;
     text-decoration: underline;
 }
 
-#profList {
-    position: relative;
-    top: 10px;
-    left: -30px;
-}
 
 #labs {
     text-align: center;
@@ -69,24 +69,35 @@
     left: -30px;
 }
 
-body{
+body {
     font-family: Bookman, URW Bookman L, serif;
 }
 
-.toRight{
+.toRight {
 
-    float:right;
+    float: right;
 }
 
-.toLeft{
-    float:left;
-}
-.clear{
-
-    clear:both;
+.toLeft {
+    float: left;
 }
 
-.relativePosition{
+.clear {
 
-    position:relative;
+    clear: both;
+}
+
+.relativePosition {
+
+    position: relative;
+}
+
+#professionalDevelopment ul{
+    position: relative;
+    top: auto;
+    left: -20px; 
+    
+}
+input{
+    width: 60px;
 }
