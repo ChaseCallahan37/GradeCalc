@@ -13,8 +13,9 @@ const parEarned = document.querySelector("#parLab-earned");
 const parTotal = document.querySelector("#parLab-total");
 
 let allGrades = pullGradesFromStor();
-let profGrades = [];
 
+//Event listener that will be called anytime there is a mouse click.
+//Will pull the data from all input boxes and render the page
 window.addEventListener("click", (e) => {
   pullAllCats();
   render();
