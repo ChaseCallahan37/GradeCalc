@@ -56,8 +56,8 @@ const getGradeEarned = (name) => {
 //This function will pull the JSON data from local storage with an ID of 'grades'
 //If nothing is found matching this description, then an empty array is returned
 const pullGradesFromStor = () => {
-  const allGrades = JSON.parse(localStorage.getItem("grades"));
-  return allGrades ? allGrades : [];
+  const storedGrades = JSON.parse(localStorage.getItem("grades"));
+  return storedGrades ? storedGrades : [];
 };
 
 //Takes the current state of the 'allGrades' array and saves it to local
