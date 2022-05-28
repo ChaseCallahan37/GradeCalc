@@ -1,113 +1,84 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-
-  <title> MIS 221 Grade Calculator</title>
-
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <!-- Jeff Comment -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/styles.css">
-</head>
-
-<body>
-  <div class="jumbotron">
-    <h1>MIS 221 Grade Calculator</h1>
-    <p class="subtext">Chase Callhan, Luke Dale, Riva Sword, Sam Mabry, Wanger Osborne </p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div id="professionalDevelopment" class="col-md-3">
-        <h5 class="" id="prof">Professional Development</h5>
-        <!--<img class="relativePosition " id="manOnStairs" src="./Images/Professional Dvelopment icon.png "
-          alt="Man climbing up stair case" height="100" width="100" />-->
-        <ul>AIMS</ul>
-
-        <input type="text" id="aims-earned" name="aims">
-        <span class="outOf"> / </span>
-        <input type="text" id="aims-total" name="aims" value="100" readonly><br>
-
-        <ul>Other</ul>
-
-        <input type="text" id="other" name="other">
-        <span class="outOf"> / </span>
-        <input type="text" id="other" name="other" value="" readonly><br><br>
-
+    <!-- Bootstrap CSS -->
+    <!-- Jeff Comment --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+      <div class="jumbotron">
+        <h1>Grade Calculator</h1>
       </div>
-
-
-      
-      <div id="labQuizParticipation" class="col-md-3">
-        <h5 id="labs">Lab/Quiz/Part</h5>
-        <ul class="" id="labsList">Lab</ul>
-        <input type="text" id="labs" name="lab">
-        <span class="outOf"> / </span>
-        <input type="text" id="labs" name="lab" value="" readonly><br>
-        <ul id="labsList">Quiz</ul>
-        <input type="text" id="quiz" name="quiz">
-        <span class="outOf"> / </span>
-        <input type="text" id="quiz" name="quiz" value="" readonly><br>
-        <ul id="labsList">Participation</ul>
-        <input type="text" id="parLab" name="participation">
-        <span class="outOf"> / </span>
-        <input type="text" id="parLab" name="participation" value="" readonly><br><br>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+              <h5 id="prof">Professional Development</h5>
+              <ul id="profList">AIMS</ul>
+              <input style="width: 60px" type="text" id="aims-earned" name="aims">
+              <input style="width: 60px" type="text" id="aims-total" name="aims" value="100" readonly><br>
+              <ul id="profList">Other</ul>
+              <input style="width: 60px" type="text" id="other-earned" name="other">
+              <input style="width: 60px" type="text" id="other-total" name="other" value="100" readonly><br><br>
+            </div>
+            <div class="col-md-3">
+              <h5 id="labs">Lab/Quiz/Part</h5>
+              <ul id="labsList">Lab</ul>
+              <input style="width: 60px" type="text" id="labs-earned" name="lab">
+              <input style="width: 60px" type="text" id="labs-total" name="lab" value="100" readonly><br>
+              <ul id="labsList">Quiz</ul>
+              <input style="width: 60px" type="text" id="quiz-earned" name="quiz">
+              <input style="width: 60px" type="text" id="quiz-total" name="quiz" value="100" readonly><br>
+              <ul id="labsList">Participation</ul>
+              <input style="width: 60px" type="text" id="parLab-earned" name="participation">
+              <input style="width: 60px" type="text" id="parLab-total" name="participation" value="100" readonly><br><br>
+            </div>
+            <div class="col-md-3">
+              <h5 id="exams">Exams</h5>
+              <ul id="examsList">Exam 1</ul>
+              <input style="width: 60px" type="text" id="exam1" name="exam1">
+              <input style="width: 60px" type="text" id="exam1" name="exam1" value="" readonly><br>
+              <ul id="examsList">Exam 2</ul>
+              <input style="width: 60px" type="text" id="exam2" name="exam2">
+              <input style="width: 60px" type="text" id="exam2" name="exam2" value="" readonly><br>
+              <ul id="examsList">Exam 3</ul>
+              <input style="width: 60px" type="text" id="exam3" name="exam3">
+              <input style="width: 60px" type="text" id="exam3" name="exam3" value="" readonly><br><br>
+            </div>
+            <div class="col-md-3">
+              <h5 id="pa">PA/RA</h5>
+              <ul id="paList">PA 1</ul>
+              <input style="width: 60px" type="text" id="pa1" name="pa1">
+              <input style="width: 60px" type="text" id="pa1" name="pa1" value="" readonly><br>
+              <ul id="paList">RA 1</ul>
+              <input style="width: 60px" type="text" id="ra1" name="ra1">
+              <input style="width: 60px" type="text" id="ra1" name="ra1" value="" readonly><br><br>
+            </div>
+            <div class="col-md-3">
+              <h5 id="groupProj">Group Project</h5>
+              <ul id="groupList">Participation</ul>
+              <input style="width: 60px" type="text" id="parProject" name="participation">
+              <input style="width: 60px" type="text" id="parProject" name="participation" value="" readonly><br>
+              <ul id="groupList">Professionalism</ul>
+              <input style="width: 60px" type="text" id="professionalism" name="professionalism">
+              <input style="width: 60px" type="text" id="professionalism" name="professionalism" value="" readonly><br>
+              <ul id="groupList">Analytical</ul>
+              <input style="width: 60px" type="text" id="analytical" name="analytical">
+              <input style="width: 60px" type="text" id="analytical" name="analytical" value="" readonly><br>
+              <ul id="groupList">PowerApp</ul>
+              <input style="width: 60px" type="text" id="powerapp" name="powerapp">
+              <input style="width: 60px" type="text" id="powerapp" name="powerapp" value="" readonly><br><br>
+            </div>
+        </div>
       </div>
-      <div id="examinations" class="col-md-3">
-        <h5 id="exams">Exams</h5>
-        <ul id="examsList">Exam 1</ul>
-        <input type="text" id="exam1" name="exam1">
-        <span class="outOf"> / </span>
-        <input type="text" id="exam1" name="exam1" value="" readonly><br>
-        <ul id="examsList">Exam 2</ul>
-        <input type="text" id="exam2" name="exam2">
-        <span class="outOf"> / </span>
-        <input type="text" id="exam2" name="exam2" value="" readonly><br>
-        <ul id="examsList">Exam 3</ul>
-        <input type="text" id="exam3" name="exam3">
-        <span class="outOf"> / </span>
-        <input type="text" id="exam3" name="exam3" value="" readonly><br><br>
-      </div>
-      <div id="paAndRa" class="col-md-3">
-        <h5 id="pa">PA/RA</h5>
-        <ul id="paList">PA 1</ul>
-        <input type="text" id="pa1" name="pa1">
-        <span class="outOf"> / </span>
-        <input type="text" id="pa1" name="pa1" value="" readonly><br>
-        <ul id="paList">RA 1</ul>
-        <input type="text" id="ra1" name="ra1">
-        <span class="outOf"> / </span>
-        <input type="text" id="ra1" name="ra1" value="" readonly><br><br>
-      </div>
-      <div id="groupProject" class="col-md-3">
-        <h5 id="groupProj">Group Project</h5>
-        <ul id="groupList">Participation</ul>
-        <input type="text" id="parProject" name="participation">
-        <span class="outOf"> / </span>
-        <input type="text" id="parProject" name="participation" value="" readonly><br>
-        <ul id="groupList">Professionalism</ul>
-        <input type="text" id="professionalism" name="professionalism">
-        <span class="outOf"> / </span>
-        <input type="text" id="professionalism" name="professionalism" value="" readonly><br>
-        <ul id="groupList">Analytical</ul>
-        <input type="text" id="analytical" name="analytical">
-        <span class="outOf"> / </span>
-        <input type="text" id="analytical" name="analytical" value="" readonly><br>
-        <ul id="groupList">PowerApp</ul>
-        <input type="text" id="powerapp" name="powerapp">
-        <span class="outOf"> / </span>
-        <input type="text" id="powerapp" name="powerapp" value="" readonly><br><br>
-      </div>
-    </div>
-    <!-- <button id="calculate-grade">Calculate</button> -->
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <div id="bodyScripts">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./objects/grade.js"></script>
+    <script src="./scripts/app-functions.js"></script>
     <script src="./scripts/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
