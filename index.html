@@ -38,33 +38,28 @@
 
         <ul>Other</ul>
 
-          <input type="text" id="other" name="other">
-          <span class="outOf"> / </span>
-          <input type="text" id="other" name="other" value="" readonly><br><br>
-        </div>
+        <input type="text" id="other-earned" name="other">
+        <span class="outOf"> / </span>
+        <input type="text" id="other-total" name="other" value="" readonly><br><br>
       </div>
       
       <div id="labQuizParticipation" class="col-md-3">
         <div class="catHeader"> <!-- header for lab/quiz/part catergory -->
         Lab/Quiz/Part
         </div>
-
-        <div class="catContents"> <!-- body content of lab/quiz/part category -->
-         <ul class="" id="labsList">Lab</ul>
-         <input type="text" id="labs" name="lab">
-         <span class="outOf"> / </span>
-         <input type="text" id="labs" name="lab" value="" readonly><br>
-        
-         <ul id="labsList">Quiz</ul>
-         <input type="text" id="quiz" name="quiz">
-         <span class="outOf"> / </span>
-         <input type="text" id="quiz" name="quiz" value="" readonly><br>
-        
-         <ul id="labsList">Participation</ul>
-         <input type="text" id="parLab" name="participation">
-         <span class="outOf"> / </span>
-         <input type="text" id="parLab" name="participation" value="" readonly><br><br>
-        </div>
+        <div class="catContents">  <!-- body content of lab/quiz/part category -->
+        <ul class="" id="labsList">Lab</ul>
+        <input type="text" id="labs-earned" name="lab">
+        <span class="outOf"> / </span>
+        <input type="text" id="labs-total" name="lab" value="" readonly><br>
+        <ul id="labsList">Quiz</ul>
+        <input type="text" id="quiz-earned" name="quiz">
+        <span class="outOf"> / </span>
+        <input type="text" id="quiz-total" name="quiz" value="" readonly><br>
+        <ul id="labsList">Participation</ul>
+        <input type="text" id="parLab-earned" name="participation">
+        <span class="outOf"> / </span>
+        <input type="text" id="parLab-total" name="participation" value="" readonly><br><br>
       </div>
 
       <div id="examinations" class="col-md-3"> 
@@ -141,6 +136,8 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <div id="bodyScripts">
+    <script src="./objects/grade.js"></script>
+    <script src="./scripts/app-functions.js"></script>
     <script src="./scripts/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
