@@ -2,18 +2,19 @@
     background-color: crimson;
     color: white;
     border-radius: 0px;
+    text-align: center;
 }
-
+.subtext{
+    text-align: center;
+    font-size: small;
+    line-height: .5;
+    
+}
 #prof {
     text-align: center;
     text-decoration: underline;
 }
 
-#profList {
-    position: relative;
-    top: 10px;
-    left: -30px;
-}
 
 #labs {
     text-align: center;
@@ -68,6 +69,63 @@
     left: -30px;
 }
 
-body{
+body {
     font-family: Bookman, URW Bookman L, serif;
+}
+
+.toRight {
+
+    float: right;
+}
+
+.toLeft {
+    float: left;
+}
+
+.clear {
+
+    clear: both;
+}
+
+.relativePosition {
+
+    position: relative;
+}
+
+#professionalDevelopment ul{
+    position: relative;
+    top: auto;
+    left: -20px; 
+    
+}
+input{
+    width: 60px;
+}
+
+#professionalDevelopment input{
+   position:relative;
+
+}
+
+.outOf{
+    font-size: 20px;
+}
+
+.catHeader{
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align:center;
+   
+    
+}
+
+.catContents{
+
+    background-color: lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:10px;
 }
