@@ -5,14 +5,88 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <!-- Jeff Comment --> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
-      <div class="jumbotron">
-        <h1>Grade Calculator</h1>
+<head>
+
+  <title> MIS 221 Grade Calculator</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <!-- Jeff Comment -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1>MIS 221 Grade Calculator</h1>
+    <p class="subtext">Chase Callhan, Luke Dale, Riva Sword, Sam Mabry, Wanger Osborne </p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div id="professionalDevelopment" class="col-md-3">
+        <div class="catHeader">
+        Professional Development
+      </div>
+        <!--<img class="relativePosition " id="manOnStairs" src="./Images/Professional Dvelopment icon.png "
+          alt="Man climbing up stair case" height="100" width="100" />-->
+        
+        <div class="catContents">
+          <ul>AIMS</ul>
+
+        <input type="text" id="aims-earned" name="aims">
+        <span class="outOf"> / </span>
+        <input type="text" id="aims-total" name="aims" value="100" readonly><br>
+
+        <ul>Other</ul>
+
+        <input type="text" id="other-earned" name="other">
+        <span class="outOf"> / </span>
+        <input type="text" id="other-total" name="other" value="" readonly><br><br>
+      </div>
+      </div>
+
+
+      
+      <div id="labQuizParticipation" class="col-md-3">
+        <div class="catHeader">
+        Lab/Quiz/Part
+        </div>
+        <div class="catContents">
+        <ul class="" id="labsList">Lab</ul>
+        <input type="text" id="labs-earned" name="lab">
+        <span class="outOf"> / </span>
+        <input type="text" id="labs-total" name="lab" value="" readonly><br>
+        <ul id="labsList">Quiz</ul>
+        <input type="text" id="quiz-earned" name="quiz">
+        <span class="outOf"> / </span>
+        <input type="text" id="quiz-total" name="quiz" value="" readonly><br>
+        <ul id="labsList">Participation</ul>
+        <input type="text" id="parLab-earned" name="participation">
+        <span class="outOf"> / </span>
+        <input type="text" id="parLab-total" name="participation" value="" readonly><br><br>
+      </div>
+      </div>
+      <div id="examinations" class="col-md-3">
+        <div class="catHeader">
+        Exams
+      </div>
+      <div class ="catContents">
+        <ul id="examsList">Exam 1</ul>
+        <input type="text" id="exam1" name="exam1">
+        <span class="outOf"> / </span>
+        <input type="text" id="exam1" name="exam1" value="" readonly><br>
+        <ul id="examsList">Exam 2</ul>
+        <input type="text" id="exam2" name="exam2">
+        <span class="outOf"> / </span>
+        <input type="text" id="exam2" name="exam2" value="" readonly><br>
+        <ul id="examsList">Exam 3</ul>
+        <input type="text" id="exam3" name="exam3">
+        <span class="outOf"> / </span>
+        <input type="text" id="exam3" name="exam3" value="" readonly><br><br>
+      </div>
       </div>
       <div class="container">
         <div class="row">
