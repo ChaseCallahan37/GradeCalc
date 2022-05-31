@@ -12,6 +12,12 @@ const quizTotal = document.querySelector("#quiz-total");
 const parEarned = document.querySelector("#parLab-earned");
 const parTotal = document.querySelector("#parLab-total");
 
+//Exams
+const exam1Earned = document.querySelector('exam1-earned');
+const exam2Earned = document.querySelector('exam2-earned');
+const exam3Earned = document.querySelector('exam3-earned');
+
+
 let allGrades = pullGradesFromStor();
 
 window.addEventListener("keypress", (e) => {
