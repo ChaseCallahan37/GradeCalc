@@ -7,11 +7,6 @@ const render = () => {
   labEarned.value = getGradeEarned("lab");
   quizEarned.value = getGradeEarned("quiz");
   parEarned.value = getGradeEarned("partic");
-
-  //Updating the exams text boxes
-  exam1.value = getGradeEarned("exam1")
-  exam2.value = getGradeEarned("exam2")
-  exam3.value = getGradeEarned("exam3")
 };
 
 //stores the function calls for each category to pull in data from txt boxes
@@ -19,7 +14,6 @@ const pullAllCats = () => {
   allGrades = [];
   pullProfDev();
   pullLab();
-  pullExams();
   saveGradesToStor();
 };
 
@@ -49,20 +43,6 @@ pullLab = () => {
     new Grade("partic", "lab/quiz/part", parEarned.value, parTotal.value)
   );
 };
-
-const pullExams = () => {
-  //calls the array that holds all grades and pushes a new object 'Grades' to it
-  //Grades takes the grade name, grade category, grade earned, and grade total in the constructor
-  allGrades.push(
-    new Grade("exam1", "exams", exam1-earned.value, exam1-total.value)
-  );
-  allGrades.push(
-    new Grade("exam2", "exams", exam2-earned.value, exam2-total.value)
-  );
-  allGrades.push(
-    new Grade("exam3", "exams", exam3-earned.value, exam3-total.value)
-  );
-}
 
 //call this function with the grand name as an argument and
 //it will return either null or the grade earned for that grade
